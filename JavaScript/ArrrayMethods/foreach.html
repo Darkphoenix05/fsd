@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ForEach</title>
+</head>
+<body>
+	<h2>ForEach</h2>
+	<script type="text/javascript">
+		let salaries=[10000,20000,30000]
+		document.write(salaries);
+		document.write("<br>");
+		salaries.forEach(function(amount,index,arr)
+		{
+			var increment=amount/10;
+			salaries[index]=amount+increment;
+		})
+		document.write(salaries);
+	</script>
+
+</body>
+</html>

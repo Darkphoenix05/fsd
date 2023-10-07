@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>numbers display types</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var s='MSP';
+		var a=10;
+		var b=20;
+		// alert(s);
+		document.write(a);
+		console.log(b)
+	</script>
+	<h2>Type of given data</h2>
+	<script type="text/javascript">
+		var c="MSP";
+		document.write(typeof(c)+"<br>");
+		var d=10;
+		document.write(typeof(d)+"<br>");
+		var gender=true;
+		document.write(typeof(gender)+"<br>");
+	</script>
+	<h2>Array</h2>
+	<script type="text/javascript">
+		var arr=[10,'madhu',30];
+		console.log(arr)
+		document.write(arr[1])
+	</script>
+	<script type="text/javascript">
+		var trainee=[{
+			'name':'madhu',
+			'rollno':'1234',
+			'college':'ACET',
+			'Branch':'ece',
+		},
+		{
+		'name':'Bhanu',
+			'rollno':'5678',
+			'college':'ACET',
+			'Branch':'ece',
+		}]
+		// document.write(trainee.name,trainee.rollno,trainee.college,trainee.branch);
+		// console.log(trainee.name,trainee.rollno,trainee.college,trainee.branch);
+		// document.write(trainee[0].name,"<br>",trainee[0].rollno,"<br>",trainee[0].college,"<br>",trainee[0].Branch,"<br>")
+		// document.write(trainee[1].name,"<br>",trainee[1].rollno,"<br>",trainee[1].college,"<br>",trainee[1].Branch,"<br>")
+		for (var i = 0; i < trainee.length; i++) {
+			document.write((i+1)+"."+trainee[i].name+"."+trainee[i].rollno+"."+trainee[i].college+"."+trainee[i].Branch);
+		}
+	</script>
+
+</body>
+</html>

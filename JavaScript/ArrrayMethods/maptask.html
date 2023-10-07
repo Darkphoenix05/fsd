@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Map</title>
+</head>
+<body>
+	<table border="1" cellspacing="0">
+		<tbody id="table_id"></tbody>
+	</table>
+
+	<script type="text/javascript">
+		let a= [
+		{
+			'name':'madhu',
+			'rollno':404
+        },
+        {
+        	'name':'adhu',
+			'rollno':404
+
+        },
+        ]
+        let tr='';
+        a.map(function(ele)
+        {
+        	// document.write(ele.name+" <br> "+ele.rollno+" <br> ");
+        	tr+="<tr>  <td>"+ele.name+"</td> <td>"+ele.rollno+"</td> </tr>";
+        })
+        document.getElementById('table_id').innerHTML=tr
+
+	</script>
+
+</body>
+</html>

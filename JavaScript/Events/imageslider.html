@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Slider</title>
+</head>
+<center>
+<body>
+	
+	<button onclick="prev()">Prev.</button>
+	<button onclick="next()">Next</button>
+	<p id="a">
+	   <img src="1.avif" style="width: 400px;height: 300px;">
+	</p>
+	<script type="text/javascript">
+		var i=1;
+		function next() {
+		
+		if (i<5) {
+			var res = ++i
+			document.getElementById('a').innerHTML="<img src='"+res+".avif' style='width:400px;height:300px;'/>";
+		}
+	}
+	function prev() {
+		
+	if (i>1) {
+			var res = --i;
+			document.getElementById('a').innerHTML="<img src='"+res+".avif'style='width:400px;height:300px;/>";
+
+
+		}
+	}
+
+
+
+	</script>
+
+</body>
+</center>
+</html>

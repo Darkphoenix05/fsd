@@ -1,0 +1,136 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Task | image</title>
+</head>
+<body>
+	<center>
+		<div style="width: 600px;height:300px;border:1px solid #000">
+			<div style="width: 380px;height:300px;float: left;border:1px solid #000">				
+				<img src="1.avif" style="width: 100px;height: 200px;border-right: 1px solid #000" onclick="getimage('1.jpg')">
+				<img src="2.avif" style="width: 100px;height: 200px;border-right: 1px solid #000" onclick="getimage('2.jpg')">
+				<img src="3.avif" style="width: 100px;height: 200px;border-right: 1px solid #000" onclick="getimage('3.jpg')">
+			</div>
+			<div style="width: 200px;height:300px;float: right;border:1px solid #000" id="output_id"></div>
+		</div>
+	</center>
+	<script type="text/javascript">
+		function getimage(img_path){
+			document.getElementById('output_id').innerHTML="<img src='"+img_path+"' style='width:200px;height:200px;' />";
+		}
+	</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Swapping Task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            gap: 30px;
+        }
+        img{
+            height: 200px;
+            width: 550px;
+            cursor: pointer;
+        }
+        .leftimage,.rightimage{
+            height: 200px;
+            width: 550px;
+            float: left;
+            border: 5px solid blueviolet;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        .btn{
+            position: relative;
+            top: 225px;
+            left: 60px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-style: bold;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" style="height: 705px;width: 1520px;padding: 10px;display: flex;">
+        <div class="left" style="height: 670px;width: 600px;border: 2px solid black;">
+            <img src="1.avif" class="leftimage" onclick="selectleft(this)"></img>
+            <img src="2.avif" class="leftimage" onclick="selectleft(this)"></img>
+            <img src="3.avif" class="leftimage" onclick="selectleft(this)"></img>
+        </div>
+        <div class="middle" style="height: 670px;width: 200px;">
+            <button class="btn" onclick="moveright()">Right</button>
+            <br><br><br><br>
+            <button class="btn" onclick="moveleft()">Left</button>
+        </div>
+        <div class="right" style="height: 670px;width: 600px;border: 2px solid black;">
+            <img src="4.avif" class="rightimage" onclick="selectright(this)"></img>
+            <img src="5.avif" class="rightimage" onclick="selectright(this)"></img>
+            <img src="white.jpg" class="rightimage" onclick="selectright(this)"></img>
+        </div>
+        <script>
+            var leftsrc="",imageleft,rightsrc="",imageright;
+            function selectleft(leftimg){
+                if(!leftimg.src.match("white.jpg")){
+                    if(leftsrc!=""){
+                        imageleft.style.borderColor="black";
+                    }
+                    leftsrc=leftimg.src;
+                    imageleft=leftimg;
+                    leftimg.style.borderColor="red";
+                }
+            }
+            function selectright(rightimg){
+                if(!rightimg.src.match("white.jpg")){
+                    if(rightsrc!=""){
+                        imageright.style.borderColor="black";
+                    }
+                    rightsrc=rightimg.src;
+                    imageright=rightimg;
+                    rightimg.style.borderColor="red";
+                }
+            }
+            function moveleft(){
+                if(rightsrc!=""){
+                    var res=document.getElementsByClassName("leftimage");
+                    for(i=0;i<res.length;i++){
+                        if(res[i].src.match("white.jpg")){
+                            res[i].src=rightsrc;
+                            rightsrc="";
+                            imageright.src="white.jpg";
+                            break;
+                        }
+                    }
+                    imageright.style.borderColor="blue";
+                }
+            }
+            function moveright(){
+                if(leftsrc!=""){
+                    var res=document.getElementsByClassName("rightimage");
+                    for(i=0;i<res.length;i++){
+                        if(res[i].src.match("white.jpg")){
+                            res[i].src=leftsrc;
+                            leftsrc="";
+                            imageleft.src="white.jpg";
+                            break;
+                        }
+                    }
+                    imageleft.style.borderColor="blue";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

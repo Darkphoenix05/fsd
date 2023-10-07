@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+</head>
+<body>
+	<label>Enter Name</label>
+	<input type="text" onkeyup="sample(this.value)" id="a">
+	<br>
+	<span id="b"></span>
+	<script type="text/javascript">
+
+		function sample(str) {
+			if (str='') {
+
+				document.getElementById('a').style="outline:3px solid red";
+
+				document.getElementById('b').innerHTML="<label>Please Enter your name</label>";
+				document.getElementById('b').style.color="red";
+			}
+			else{
+				document.getElementById('a').style="outline:3px solid blue";
+				document.getElementById('b').innerHTML="";
+			}
+		}
+	</script>
+	<!-- <script type="text/javascript">
+
+		function sample(str) {
+			if (str.length < 3) {
+
+				document.getElementById('a').style="outline:3px solid red";
+
+				document.getElementById('b').innerHTML="<label>Please Enter More than 3 chars</label>";
+				document.getElementById('b').style.color="red";
+			}
+			else{
+				document.getElementById('a').style="outline:3px solid blue";
+				document.getElementById('b').innerHTML="";
+			}
+		}
+	</script> -->
+
+
+</body>
+</html>

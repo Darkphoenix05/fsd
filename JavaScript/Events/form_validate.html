@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+	<center>
+		<form id="myform" onsubmit="validateform()">
+			FirstName: <input type="text" name="fname" id="fname">
+			<br>
+			LastName: <input type="text" name="lname" id="lname">
+			<br>
+			<br>			
+			<select id="clg">
+			<option>...select college...</option>
+			<option value="AEC">AEC</option>
+			<option value="ACET">ACET</option>
+			<option value="ACOE">ACOE</option>
+		</select><br><br>
+		<input type="button" onclick="sample()" value="SubmitForm">
+		<input type="button" onclick="resetform()" value="Reset">
+		</form>
+		<script type="text/javascript">
+			function sample() {
+				document.getElementById('myform').submit()
+				
+			}
+			function resetform() {
+				document.getElementById('myform').reset()
+			}
+			function validateform() {
+				let document.getElementById('fname').value;
+				let document.getElementById('lname').value;
+				let document.getElementById('clg').value;
+				if (str=='') {
+					alert()
+				}
+			}
+		</script>
+
+	</center>
+
+</body>
+</html>

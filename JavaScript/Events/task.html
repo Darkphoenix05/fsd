@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show/Hide Data</title>
+<style>
+  #data {
+    display: none;
+  }
+</style>
+</head>
+<body>
+<button id="showBtn">Show Data</button>
+<button id="hideBtn">Hide Data</button>
+
+  <p id="data">This is the hidden data that will be shown and hidden.</p>
+
+<script>
+  const showButton = document.getElementById('showBtn');
+  const hideButton = document.getElementById('hideBtn');
+  const p = document.getElementById('data');
+
+  showButton.addEventListener('click',
+   () =>
+  {
+    p.style.display = 'block';
+  });
+
+  hideButton.addEventListener('click', () => 
+  {
+    p.style.display = 'none';
+  });
+</script>
+</body>
+</html>

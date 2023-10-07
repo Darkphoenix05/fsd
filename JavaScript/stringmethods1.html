@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Str</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>D</td>
+			<td>R</td>
+			<td>I</td>
+			<td>V</td>
+			<td>E</td>
+			<td>&nbsp</td>
+			<td>R</td>
+			<td>E</td>
+			<td>A</td>
+			<td>D</td>
+			<td>Y</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-4</td>
+			<td>-4</td>
+			<td>-2</td>
+			<td>-2</td>
+			<td>-1</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		let str='driveready';
+		
+			document.write("<b>"+str+"</b>");
+			document.write("<br>");
+			document.write("String length="+str.length);
+			document.write("<br>");
+			document.write("String finder="+str[2]);
+			document.write("<br>");
+			//charAtmethod
+			document.write("CharAtmethod="+str.charAt(3));
+			document.write("<br>");
+			document.write("Index of r="+str.indexOf('r'));
+			document.write("<br>");
+			document.write("Last Index of="+str.lastIndexOf('r'));
+			document.write("<br>");
+			//Trim method
+		   let str1=' madhu   ';
+			document.write("Trim method="+str1.trim());
+			document.write("<br>");
+			let str2='DRIVEREADY';
+			document.write("Lower Case="+str2.toLowerCase());
+			document.write("<br>");
+			let str3='madhu';
+			let str4='satya';
+			let str5='prakash';
+			document.write("conacte strings="+str3.concat(str4,str5));
+			document.write("<br>");
+			let str7='fsd drive ready batch';
+			//includes()=>returns boolean value
+			document.write("Include method="+str7.includes('batch'));
+			document.write("<br>");
+			document.write("Include method="+str7.includes('afternnoon'));
+			document.write("<br>");
+			//converting string to array=> split method
+			let str8='madhu';
+			document.write("String to array="+str8.split(""));
+			document.write("<br>");
+			let str9='madhu&bhanu,aditya';
+			document.write(str9.split("&"));
+			document.write("<br>");
+			document.write(str9.split(","));
+			document.write("<br>");
+			let str10='madhu';
+			document.write("starts with="+str10.startsWith('m'));
+			document.write("<br>");
+			document.write("starts with="+str10.startsWith('l'));
+			document.write("<br>");
+			let str11='madhu';
+			document.write("Ends with="+str11.endsWith('u'));
+			document.write("<br>");
+			document.write("Ends with="+str11.endsWith('l'));
+			//slice method
+			//stringname.slice(startpos,endpos-1)
+			document.write("slice method="+str.slice(1,5));
+			document.write("<br>");
+			document.write("slice method="+str.slice(-4));
+			document.write("<br>");
+			document.write("slice method="+str.slice(-4,-2));
+			document.write("<br>");
+			//substring method
+			document.write("substring method="+str.substring(1,5));//this is crct waY
+			document.write("<br>");
+			document.write("substring method="+str.substring(5,1));//not crct way 
+			document.write("<br>");
+			//substr method=> substr(startpos,length of characters from 1st argument)
+			document.write("substr method="+str.substr(1,5));
+
+
+
+
+
+
+	
+	</script>
+
+</body>
+</html>

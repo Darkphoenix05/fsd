@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM Properties</title>
+</head>
+<body>
+	<h1 id="a">FULL STACK DEVELOPMENT</h1>
+	<h2 id="b">WEB DEVELOPMENT</h2>
+<!-- 
+	<script type="text/javascript">
+		let c = document.getElementById('a');
+		c.innerHTML = 'FULL  ';
+		let d = document.getElementById('b');
+         d.innerText = 
+     </script>
+     <br> -->
+	<img id="hi" src="" height="300px"width="300px" >
+	<script type="text/javascript">
+		 
+		document.getElementById('hi').src='hi.png';
+
+	</script>
+	<br>
+	<br>
+	<br>
+	<br>
+	<input type="text" name="sim" id="m">
+	<p id="n">Please Enter Name</p>
+	<span>Hai</span>
+	<script type="text/javascript">
+		document.getElementById('m').style.borderColor='red';
+		document.getElementById('n').style.color='red';
+	</script>
+	<h1>By class Method</h1>
+	<p class="p">HTML</p>
+	<p class="p">CSS</p>
+	<p class="p">BOOTSTRAP</p>
+	<script type="text/javascript">
+		let paras = document.getElementsByClassName('p');
+		console.log(paras);
+		paras[0].innerText='Hyper Text Markup Language';
+		paras[1].style.color='red';
+    </script>
+    <h1>Lists</h1>
+    <ul>
+    	<li>AEC</li>
+    	<li>ACET</li>
+    	<li>ACOE</li>
+    </ul>
+    <script type="text/javascript">
+    	let lis = document.getElementsByTagName('li');
+    	lis[0].style.color = 'red';
+    	lis[0].style.fontSize = '50px';
+    	lis[1].style.color = 'red';
+    	lis[1].style.fontSize = '50px';
+    	lis[2].style.color = 'red';
+    	lis[2].style.fontSize = '50px';
+
+
+    	
+    </script>
+
+</body>
+</html>

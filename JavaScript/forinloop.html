@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For In Loop</h2>
+<p>The for in statement loops through the properties of an object:</p>
+
+
+<script>
+  var students=[
+  {
+    name:'Madhu',
+    roll:404,
+    college:'acet'
+  },
+  {
+    name:'Bhanu',
+    roll:412,
+    college:'acet'
+  },
+  {
+    name:'Aditya',
+    roll:422,
+    college:'acet'
+  }
+  ]
+  for (var i = 0; i <students.length; i++) 
+  {
+   for(key in students[i]){
+
+    document.write(students[i][key])
+  }
+  document.write('<br>')
+  }
+</script>
+
+</body>
+</html>
