@@ -1,0 +1,32 @@
+.col-md-1{
+	height: 80px;
+	width: 80px;
+	margin-top: 30px;
+	border: 10px solid black;
+	background-color: lavender;
+	padding-top: 20px;
+	text-align: justify;
+	font-size: 10px;
+}
+.col-md-2{
+	height: 80px;
+	width: 160px;
+	border: 10px solid black;
+	background-color: lavender;
+	text-align: justify;
+	font-size: 10px;
+}
+.col-md-8{
+	border: 5px solid black;
+	background-color: lavender;
+}
+.col-md-6{
+	border: 5px solid black;
+	background-color: lavender;
+}
+.col-md-12{
+	border: 5px solid black;
+	background-color: lavender;
+}
+
+

@@ -1,0 +1,23 @@
+a:link{
+	color: orange;
+}
+a:visited{
+	color: gold;
+}
+a:active{
+	color: darkred;
+}
+a:hover{
+	color: yellow;
+}
+img:hover{
+	height: 1000px;
+	width: 2000px;
+}
+
+
+}
+div:hover{
+	color: lavender;
+	height: 1000px;
+width: 1000px}

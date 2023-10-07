@@ -1,0 +1,13 @@
+/*body{
+	background-image: url('pexels-mamunurpics-3930012.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+div{
+	height: 400px;
+	width: 400px;
+	border: 6px black;
+	background-image: url('pexels-mamunurpics-3930012.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}

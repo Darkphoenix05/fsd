@@ -1,0 +1,28 @@
+h1,p,span,hr{
+	color: yellow;
+	font-size: 50px;
+	background-color: darkred;
+}
+*{
+	font-family:cursive;
+	margin: 0px;
+	padding: 0px;
+}
+input[type]{
+	color: violet;
+	background-color: orange;
+	border: 30px gray;
+	border-style:groove ;
+}
+input[type="text"]{
+	color: darkred;
+}
+input[type="password"]{
+	color: orange;
+}
+input[type="email"]{
+	color: gray;
+}
+img[src]{
+	border-style: double;
+}

@@ -1,0 +1,8 @@
+div{
+	height: 100px;
+	width: 200px;
+	background-image:url("border.jpeg");
+	border: 10px double black;
+	text-align: center;
+	line-height: 100px;
+}
